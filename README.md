@@ -4,16 +4,19 @@ Event-driven, non-blocking I/O with PHP.
 
 [![Build Status](https://secure.travis-ci.org/reactphp/react.png?branch=master)](http://travis-ci.org/reactphp/react)
 
+### Notice - (May 25th, 2014)
+
+As of 2014-05-25 we have reversed roles of this and the component repositories. 
+Instead of reactphp/react being the master code repository it is now the sum of React's parts. 
+All PRs should be made against their corresponding repository found in [/reactphp](https://github.com/reactphp). 
+All existing PRs will be evaluated and work will be done with the submitter to merge it into the proper component. 
+
 ## Install
 
-The recommended way to install react is [through composer](http://getcomposer.org).
+The recommended way to install React is [through composer](http://getcomposer.org). Type the following command in your shell environment:
 
-```JSON
-{
-    "require": {
-        "react/react": "0.4.*"
-    }
-}
+```
+php ~/composer.phar require react/react
 ```
 
 ## What is it?
@@ -84,7 +87,7 @@ $loop->run();
 ## Documentation
 
 Superficial documentation can be found in the README files of the individual
-components. See `src/*/README.md`.
+components. See `vendor/react/*/src/README.md`.
 
 ## Community
 
