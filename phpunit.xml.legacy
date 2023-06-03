@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- PHPUnit configuration file with old PHPUnit format for PHP < 7.3 -->
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/4.8/phpunit.xsd"
+         bootstrap="tests/bootstrap.php"
+         colors="true">
+    <testsuites>
+        <testsuite name="ReactPHP Test Suite">
+            <directory>./vendor/react/*/tests/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory>./vendor/react/*/src/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
